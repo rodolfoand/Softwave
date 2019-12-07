@@ -1,0 +1,41 @@
+MariaDB [fatec]> desc produto;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| codigo     | varchar(20)  | YES  |     | NULL    |       |
+| titulo     | varchar(100) | YES  |     | NULL    |       |
+| descritivo | varchar(500) | YES  |     | NULL    |       |
+| valor      | decimal(5,2) | YES  |     | NULL    |       |
+| destaque   | tinyint(1)   | YES  |     | NULL    |       |
+| qtd        | int(11)      | YES  |     | NULL    |       |
+| categoria  | varchar(100) | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+7 rows in set (0.062 sec)
+
+
+MariaDB [fatec]> desc cliente;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| codigo    | varchar(20)  | YES  |     | NULL    |       |
+| nome      | varchar(100) | YES  |     | NULL    |       |
+| email     | varchar(100) | YES  |     | NULL    |       |
+| senha     | varchar(20)  | YES  |     | NULL    |       |
+| documento | varchar(100) | YES  |     | NULL    |       |
+| telefone  | varchar(20)  | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+6 rows in set (0.034 sec)
+
+MariaDB [fatec]> desc cesta;
++---------------+--------------+------+-----+---------+-------+
+| Field         | Type         | Null | Key | Default | Extra |
++---------------+--------------+------+-----+---------+-------+
+| sessionId     | varchar(100) | YES  |     | NULL    |       |
+| codigoCliente | varchar(100) | YES  |     | NULL    |       |
+| codigoProduto | varchar(20)  | YES  |     | NULL    |       |
+| quantidade    | int(11)      | YES  |     | NULL    |       |
+| valorUnitario | decimal(5,2) | YES  |     | NULL    |       |
+| valorTotal    | decimal(5,2) | YES  |     | NULL    |       |
++---------------+--------------+------+-----+---------+-------+
+6 rows in set (0.035 sec)
+
